@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RespawnShips>
+
+    <Ship>
+      <Id>
+        <TypeId>RespawnShipDefinition</TypeId>
+        <SubtypeId>SpawnBuggy</SubtypeId>
+      </Id>
+      <DisplayName>Spawn Buggy</DisplayName>
+      <Icon>Textures\GUI\Respawnships\RangeRunner.png</Icon>
+      <CooldownSeconds>0</CooldownSeconds>
+      <Prefab>SpawnBuggy</Prefab>
+      <MinimalAirDensity>0.8</MinimalAirDensity>
+      <PlanetDeployAltitude>3000</PlanetDeployAltitude>
+      <UseForPlanetsWithAtmosphere>true</UseForPlanetsWithAtmosphere>
+      <HelpTextLocalizationId>A simple Respawn Buggy.</HelpTextLocalizationId>
+    </Ship>
+
+    <Ship>
+      <Id>
+        <TypeId>RespawnShipDefinition</TypeId>
+        <SubtypeId>IbrisRespawnShip</SubtypeId>
+      </Id>
+      <DisplayName>Respawn Ship</DisplayName>
+      <Icon>Textures\GUI\Respawnships\LittleBird.png</Icon>
+      <CooldownSeconds>0</CooldownSeconds>
+      <Prefab>IbrisRespawnShip</Prefab>
+      <UseForSpace>true</UseForSpace>
+      <HelpTextLocalizationId>Spawn Ship</HelpTextLocalizationId>
+    </Ship>
+
+    <Ship>
+      <Id>
+        <TypeId>RespawnShipDefinition</TypeId>
+        <SubtypeId>MoonSpawnBuggy</SubtypeId>
+      </Id>
+      <DisplayName>Moon Lander</DisplayName>
+      <Icon>Textures\GUI\RespawnShips\MoonSpawnBuggy.png</Icon>
+      <CooldownSeconds>900</CooldownSeconds>
+      <Prefab>MoonSpawnBuggy</Prefab>
+      <PlanetDeployAltitude>8</PlanetDeployAltitude>
+      <UseForPlanetsWithoutAtmosphere>true</UseForPlanetsWithoutAtmosphere>
+      <HelpTextLocalizationId>Moon buggy.</HelpTextLocalizationId>
+    </Ship>
+
+
+    
+    <!-- Vanilla Ships - Disabled -->
+
+    <Ship Enabled="false">
+      <Id>
+        <TypeId>RespawnShipDefinition</TypeId>
+        <SubtypeId>RespawnPlanetPod</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_PlanetaryLander</DisplayName>
+      <Icon>Textures\GUI\Icons\RespawnShips\RespawnPlanetPod.png</Icon>
+      <CooldownSeconds>0</CooldownSeconds>
+      <Prefab>RespawnPlanetPod</Prefab>
+      <MinimalAirDensity>0.8</MinimalAirDensity>
+      <PlanetDeployAltitude>2000</PlanetDeployAltitude>
+      <UseForPlanetsWithAtmosphere>true</UseForPlanetsWithAtmosphere>
+      <InitialLinearVelocity x="0" y="-95" z="0" />
+      <InitialAngularVelocity x="0" y="0.5" z="0" />
+      <HelpTextLocalizationId>RespawnScreeenHelpTextSpawn</HelpTextLocalizationId>
+    </Ship>
+
+    <Ship Enabled="false">
+      <Id>
+        <TypeId>RespawnShipDefinition</TypeId>
+        <SubtypeId>RespawnMoonPod</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_PlanetaryLander</DisplayName>
+      <Icon>Textures\GUI\Icons\RespawnShips\RespawnMoonPod.png</Icon>
+      <CooldownSeconds>0</CooldownSeconds>
+      <Prefab>RespawnMoonPod</Prefab>
+      <PlanetDeployAltitude>8</PlanetDeployAltitude>
+      <UseForPlanetsWithoutAtmosphere>true</UseForPlanetsWithoutAtmosphere>
+      <HelpTextLocalizationId>RespawnScreeenHelpTextSpawn</HelpTextLocalizationId>
+    </Ship>
+
+    <Ship Enabled="false">
+      <Id>
+        <TypeId>RespawnShipDefinition</TypeId>
+        <SubtypeId>RespawnSpacePod</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_RespawnPodSpace</DisplayName>
+      <Icon>Textures\GUI\Icons\RespawnShips\RespawnSpacePod.png</Icon>
+      <CooldownSeconds>900</CooldownSeconds>
+      <Prefab>RespawnSpacePod</Prefab>
+      <UseForSpace>true</UseForSpace>
+      <HelpTextLocalizationId>RespawnScreeenHelpTextSpaceSpawn</HelpTextLocalizationId>
+    </Ship>
+
+  </RespawnShips>                
+</Definitions>
